@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Flair Detector</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body style="background: #000;">
+    <div class="bg-1">
+        <div class="container-1">
+            <div class="wrap-1">
+                <form class="form-1 validate-form" action="{{url_for('predict')}}" method="POST">
+                    <span class="form-1-title">
+                        Reddit Flair Detection
+                    </span>
+
+                    <div class="wrap-2 validate-input" data-validate="URL is required">
+                        <input class="input-2" type="text" name="link" id="link">
+                        <span class="input-3" data-placeholder="Enter URL for the post"></span>
+                    </div>
+
+                    <div class="container-1-form-btn">
+                        <div class="wrap-1-form-btn">
+                            <div class="form-1-bgbtn"></div>
+                            <button class="form-1-btn" type="Submit">
+                                Detect
+                            </button>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="predict_text">
+                        PREDICTED - {{prediction}}
+                        <br> ACTUAL - {{prediction1}}
+                    </div>
+
+                </form>
+                <br>
+                <br>
+                <br>
+                <form class="form-1 validate-form" action="{{url_for( 'automated_testing')}}" method="POST" enctype="multipart/form-data">
+
+                    <h3 align="center">Please select a .txt file to be upload.</h3>
+                    <div class="wrap-3 validate-input">
+                        <input class="input-2" type="file" name="upload_file" id="upload_file">
+                    </div>
+
+                    <div class="container-1-form-btn">
+                        <div class="wrap-1-form-btn">
+                            <div class="form-1-bgbtn"></div>
+                            <button class="form-1-btn" type="Submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
