@@ -50,6 +50,8 @@ Going through various literatures available for text processing and suitable mac
   * MLP
 5. Training and Testing on the dataset showed the **Random Forest showed the best testing accuracy of 92.617%** when title is used as the feature.
 6. The best model is saved and is used for prediction of the flair from the URL of the post.
+7. The model was deployed on a web application build on **Flask** to predict the flair of the url from India subreddit.
+8. Algorithm with best accuracy was **Random Forest**, but since models with >500 MB cannot be deployed to Heroku, so model based on **Linear SVM** is deployed on Heroku.
 
 **Results from algorithms used, using title as the feature**
 | Algorithm | Accuracy |
