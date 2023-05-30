@@ -5,7 +5,7 @@
     <title>Flair Detector</title>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
 
 </head>
 
@@ -17,6 +17,11 @@
                     <span class="form-1-title">
                         Reddit Flair Detection
                     </span>
+                    <div>
+                        <span style="font-size: 14px; font-weight: 400; display: block; color: #333333; text-align: center; margin-bottom: 60px;">
+                            by Pranay Kothari
+                        </span>
+                    </div>
 
                     <div class="wrap-2 validate-input" data-validate="URL is required">
                         <input class="input-2" type="text" name="link" id="link">
@@ -36,8 +41,8 @@
                     <br>
 
                     <div class="predict_text">
-                        PREDICTED - {{prediction}}
-                        <br> ACTUAL - {{prediction1}}
+                        PREDICTED - <script type="text/javascript">prediction</script> 
+                        <br> ACTUAL - <script type="text/javascript">prediction1</script>
                     </div>
 
                 </form>

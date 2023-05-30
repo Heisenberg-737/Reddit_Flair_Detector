@@ -58,11 +58,12 @@ button:hover {
 .form-1-title {
     display: block;
     font-family: 'Arial';
-    font-size: 14px;
+    font-size: 32px;
+    font-weight: bolder;
     color: #333333;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
 }
 
 .wrap-3 {
@@ -87,7 +88,7 @@ button:hover {
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 5px;
     pointer-events: none;
 }
 
@@ -215,7 +216,8 @@ textarea.input-2+.input-3::after {
     min-width: 244px;
     height: 50px;
     font-family: 'Arial';
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
     color: #fff;
     background: rgba(210, 98, 98, 0.9);
     background: -webkit-linear-gradient(45deg, rgba(123, 67, 151, 0.7), rgba(220, 36, 48, 0.7));
