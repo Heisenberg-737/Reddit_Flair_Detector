@@ -33,6 +33,18 @@ The following dependencies can be found in requirements.txt:
 19. unicodecsv
 20. win-unicode-console
 
+Configuration
+=======================
+
+The app reads its Reddit API credentials from environment variables (never commit them):
+
+```bash
+export praw_client_id=<your client id>
+export praw_client_secret=<your client secret>
+```
+
+On Heroku, set them with `heroku config:set praw_client_id=... praw_client_secret=...`.
+
 Approach
 ======================
 
