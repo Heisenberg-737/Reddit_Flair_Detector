@@ -18,20 +18,19 @@ The following dependencies can be found in requirements.txt:
 4. gunicorn
 5. html5lib
 6. json5
-7. nltk
-8. numpy
-9. numpydoc
-10. pandas
-11. path
-12. pathlib2
-13. praw
-14. prawcore
-15. py
-16. requests
-17. scikit-learn
-18. scipy
-19. unicodecsv
-20. win-unicode-console
+7. numpy
+8. numpydoc
+9. pandas
+10. path
+11. pathlib2
+12. praw
+13. prawcore
+14. py
+15. requests
+16. scikit-learn
+17. scipy
+18. unicodecsv
+19. win-unicode-console
 
 Configuration
 =======================

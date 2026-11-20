@@ -12,9 +12,6 @@ import time
 import datetime
 import sys
 import sklearn.linear_model
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 import unicodedata
 from bs4 import BeautifulSoup
 
