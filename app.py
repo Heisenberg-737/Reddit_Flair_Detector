@@ -18,8 +18,8 @@ from nltk.corpus import stopwords
 import unicodedata
 from bs4 import BeautifulSoup
 
-reddit=praw.Reddit(client_id='RD4BIpMTGlTVgw', client_secret='_X6Xr7GZom9JNZ6wkLg_twa6L6M',
-username='pkothari_17', password='reddit101', user_agent='Reddit Flair',)
+# Credentials come from env vars praw_client_id, praw_client_secret (and optionally praw_username, praw_password)
+reddit=praw.Reddit(user_agent='Reddit Flair')
 
 #flask app
 app = Flask(__name__)
